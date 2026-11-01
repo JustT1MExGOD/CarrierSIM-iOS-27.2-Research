@@ -1,0 +1,78 @@
+# Fragment: MIInstaller._patchUpdateInstallableForBundle entry + placeholder check
+# Source: installd_B3.bin (B3, arm64e, UUID F54A48D1-4E77-3425-BEAB-5EBBBB037C0F)
+
+-[MIInstaller _patchUpdateInstallableForBundle:manifestPath:existingBundleContainer:patchType:error:]:
+0x100033a60:  7f 23 03 d5   pacibsp
+0x100033a64:  ff c3 02 d1   sub	sp, sp, #0xb0
+0x100033a68:  fc 6f 05 a9   stp	x28, x27, [sp, #0x50]
+0x100033a6c:  fa 67 06 a9   stp	x26, x25, [sp, #0x60]
+0x100033a70:  f8 5f 07 a9   stp	x24, x23, [sp, #0x70]
+0x100033a74:  f6 57 08 a9   stp	x22, x21, [sp, #0x80]
+0x100033a78:  f4 4f 09 a9   stp	x20, x19, [sp, #0x90]
+0x100033a7c:  fd 7b 0a a9   stp	fp, lr, [sp, #0xa0]
+0x100033a80:  fd 83 02 91   add	fp, sp, #0xa0
+0x100033a84:  f4 03 06 aa   mov	x20, x6
+0x100033a88:  f7 03 05 aa   mov	x23, x5
+0x100033a8c:  f6 03 04 aa   mov	x22, x4
+0x100033a90:  f5 03 03 aa   mov	x21, x3
+0x100033a94:  f8 03 00 aa   mov	x24, x0
+0x100033a98:  62 1a 01 94   bl	j__objc_retain_x2
+0x100033a9c:  f3 03 00 aa   mov	x19, x0
+0x100033aa0:  68 1a 01 94   bl	j__objc_retain_x21
+0x100033aa4:  f5 03 00 aa   mov	x21, x0
+0x100033aa8:  6a 1a 01 94   bl	j__objc_retain_x22
+0x100033aac:  f6 03 00 aa   mov	x22, x0
+0x100033ab0:  e0 03 18 aa   mov	x0, x24
+0x100033ab4:  53 34 01 94   bl	j__objc_msgSend(x0, "options")
+0x100033ab8:  c2 19 01 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100033abc:  fa 03 00 aa   mov	x26, x0
+0x100033ac0:  e0 2f 01 94   bl	j__objc_msgSend(x0, "installTargetType")
+0x100033ac4:  f9 03 00 aa   mov	x25, x0
+0x100033ac8:  26 1a 01 94   bl	j__objc_release_x26
+0x100033acc:  56 02 00 b4   cbz	x22, loc_100033b14 ; ⤵ 0x48
+0x100033ad0:  e0 03 16 aa   mov	x0, x22
+0x100033ad4:  a3 26 01 94   bl	j__objc_msgSend(x0, "bundle")
+0x100033ad8:  ba 19 01 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100033adc:  fa 03 00 aa   mov	x26, x0
+0x100033ae0:  28 31 01 94   bl	j__objc_msgSend(x0, "isPlaceholder")
+0x100033ae4:  fb 03 00 aa   mov	x27, x0
+0x100033ae8:  1e 1a 01 94   bl	j__objc_release_x26
+0x100033aec:  7b 02 00 34   cbz	w27, loc_100033b38 ; ⤵ 0x4c
+0x100033af0:  a8 04 00 f0   adrp	x8, 0x1000ca000
+
+# not-installed / placeholder error construction
+0x100033b70:  e0 03 13 aa   mov	x0, x19
+0x100033b74:  0b 2d 01 94   bl	j__objc_msgSend(x0, "identifier")
+0x100033b78:  92 19 01 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100033b7c:  f9 03 00 aa   mov	x25, x0
+0x100033b80:  e0 02 00 f0   adrp	x0, 0x100092000
+0x100033b84:  00 ac 05 91   add	x0, x0, #0x16b ; "-[MIInstaller _patchUpdateInstallableForBundle:manifestPath:existingBundleContainer:patchType:error:]"
+0x100033b88:  f7 67 00 a9   stp	x23, x25, [sp]
+0x100033b8c:  a5 04 00 d0   adrp	x5, 0x1000c9000
+0x100033b90:  a5 e0 25 91   add	x5, x5, #0x978 ; _OBJC_CLASS_$_NSConstantDictionary
+0x100033b94:  66 04 00 f0   adrp	x6, 0x1000c2000
+0x100033b98:  c6 c0 08 91   add	x6, x6, #0x230 ; "%@ patch submitted for application %@ that's not installed. Failing."
+0x100033b9c:  41 60 80 52   mov	w1, #0x302
+0x100033ba0:  0f 00 00 14   b	loc_100033bdc ; ⤵ 0x3c
+0x100033ba4:  ; loc_100033ba4
+0x100033ba4:  77 04 00 f0   adrp	x23, 0x1000c2000
+0x100033ba8:  f7 c2 1a 91   add	x23, x23, #0x6b0 ; "Unknown"
+0x100033bac:  ; loc_100033bac
+0x100033bac:  e0 03 13 aa   mov	x0, x19
+0x100033bb0:  fc 2c 01 94   bl	j__objc_msgSend(x0, "identifier")
+0x100033bb4:  83 19 01 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100033bb8:  f9 03 00 aa   mov	x25, x0
+0x100033bbc:  e0 02 00 f0   adrp	x0, 0x100092000
+0x100033bc0:  00 ac 05 91   add	x0, x0, #0x16b ; "-[MIInstaller _patchUpdateInstallableForBundle:manifestPath:existingBundleContainer:patchType:error:]"
+0x100033bc4:  f7 67 00 a9   stp	x23, x25, [sp]
+0x100033bc8:  a5 04 00 d0   adrp	x5, 0x1000c9000
+0x100033bcc:  a5 80 26 91   add	x5, x5, #0x9a0 ; _OBJC_CLASS_$_NSConstantDictionary
+0x100033bd0:  66 04 00 f0   adrp	x6, 0x1000c2000
+0x100033bd4:  c6 40 09 91   add	x6, x6, #0x250 ; "%@ patch submitted for application %@ that's just a placeholder. Failing."
+0x100033bd8:  e1 60 80 52   mov	w1, #0x307
+0x100033bdc:  ; loc_100033bdc
+0x100033bdc:  e2 03 18 aa   mov	x2, x24
+0x100033be0:  03 01 80 52   mov	w3, #0x8
+0x100033be4:  04 00 80 d2   mov	x4, #0
+0x100033be8:  56 9a ff 97   bl	0x10001a540
+0x100033bec:  75 19 01 94   bl	j__objc_claimAutoreleasedReturnValue

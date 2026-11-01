@@ -1,0 +1,84 @@
+@protocol MobileInstallerProtocol
+
+@required
+
+/* required instance methods */
+-[MobileInstallerProtocol installURL:identity:targetingDomain:options:returningResultInfo:completion:];
+-[MobileInstallerProtocol stageInstallURL:identity:targetingDomain:withOptions:completion:];
+-[MobileInstallerProtocol installParallelPlaceholderForStagedIdentifier:fromURL:returningResultInfo:completion:];
+-[MobileInstallerProtocol finalizeStagedInstallForIdentifier:returningResultInfo:completion:];
+-[MobileInstallerProtocol cancelUpdateForStagedIdentifiers:completion:];
+-[MobileInstallerProtocol allStagedUpdatesWithCompletion:];
+-[MobileInstallerProtocol registerPlaceholderForReference:completion:];
+-[MobileInstallerProtocol revertIdentity:withOptions:completion:];
+-[MobileInstallerProtocol uninstallIdentifiers:withOptions:completion:];
+-[MobileInstallerProtocol uninstallIdentity:withOptions:completion:];
+-[MobileInstallerProtocol lookupUninstalledWithOptions:completion:];
+-[MobileInstallerProtocol clearUninstalledIdentifiers:withOptions:completion:];
+-[MobileInstallerProtocol lookupSystemAppStateWithOptions:completion:];
+-[MobileInstallerProtocol updateSystemAppStateForIdentifier:appState:completion:];
+-[MobileInstallerProtocol registerContentsForDiskImageAtURL:completion:];
+-[MobileInstallerProtocol unregisterContentsForDiskImageAtURL:completion:];
+-[MobileInstallerProtocol registerContentsOnOSModuleAtURL:completion:];
+-[MobileInstallerProtocol unregisterContentsOnOSModuleAtURL:completion:];
+-[MobileInstallerProtocol reconcileContentsOnKnownOSModules:completion:];
+-[MobileInstallerProtocol registerContentsOnRoot:deferUntilNextBoot:completion:];
+-[MobileInstallerProtocol unregisterContentsOnRoot:deferUntilNextBoot:completion:];
+-[MobileInstallerProtocol enumerateInstalledAppsWithOptions:usingLegacyDictionary:completion:];
+-[MobileInstallerProtocol fetchDiskUsageForIdentifiers:withOptions:completion:];
+-[MobileInstallerProtocol registerSafeHarborAtPath:forIdentity:ofType:withOptions:completion:];
+-[MobileInstallerProtocol removeSafeHarborForIdentity:ofType:withOptions:completion:];
+-[MobileInstallerProtocol listSafeHarborsOfType:forPersona:withOptions:completion:];
+-[MobileInstallerProtocol checkCapabilities:withOptions:completion:];
+-[MobileInstallerProtocol fetchInfoForFrameworkAtURL:options:completion:];
+-[MobileInstallerProtocol fetchInfoForContainerizedAppWithIdentity:inDomain:options:completion:];
+-[MobileInstallerProtocol updateSinfForIXWithIdentifier:withOptions:sinfData:completion:];
+-[MobileInstallerProtocol updateiTunesMetadataForIXWithIdentifier:metadata:completion:];
+-[MobileInstallerProtocol updatePlaceholderMetadataForApp:installType:failureReason:underlyingError:failureSource:completion:];
+-[MobileInstallerProtocol getAppMetadataForApp:completion:];
+-[MobileInstallerProtocol snapshotWKAppInCompanionAppID:toURL:options:completion:];
+-[MobileInstallerProtocol setSystemAppMigrationComplete:];
+-[MobileInstallerProtocol waitForSystemAppMigratorToComplete:];
+-[MobileInstallerProtocol systemAppMigratorHasCompleted:];
+-[MobileInstallerProtocol storeListOfAppsRequiringPreInstallConsent:completion:];
+-[MobileInstallerProtocol fetchListOfAppsRequiringPreInstallConsent:];
+-[MobileInstallerProtocol triggerRegistrationForContainerizedContentForOptions:withCompletion:];
+-[MobileInstallerProtocol triggerRegistrationForDiskImageContentForOptions:withCompletion:];
+-[MobileInstallerProtocol rebuildBuiltInContentMappingWithCompletion:];
+-[MobileInstallerProtocol cloneSerializedPlaceholderForInstalledAppWithBundeID:personaUniqueString:atResultURL:withCompletion:];
+-[MobileInstallerProtocol setLaunchWarningForApp:withUniqueInstallIdentifier:warningData:completion:];
+-[MobileInstallerProtocol setAppReplacementStatus:forApp:replacingApp:completion:];
+-[MobileInstallerProtocol endAppReplacementWithStatus:forApp:completion:];
+-[MobileInstallerProtocol prepareReplacementOfApp:byApp:extensionBundleIDs:withCompletion:];
+-[MobileInstallerProtocol setLaunchProhibited:forApp:withCompletion:];
+-[MobileInstallerProtocol pushReplacementInfoForApp:replacingApp:withCompletion:];
+-[MobileInstallerProtocol finalizeReference:completion:];
+-[MobileInstallerProtocol acquireReferenceforInstalledAppWithIdentity:inDomain:matchingInstallSessionID:completion:];
+-[MobileInstallerProtocol invalidateReference:completion:];
+-[MobileInstallerProtocol referencesForBundleWithIdentifier:inDomain:completion:];
+-[MobileInstallerProtocol setDataSeparatedAppsWithBundleIDs:withPersona:withCompletion:];
+-[MobileInstallerProtocol addDataSeparatedAppsWithBundleIDs:toPersona:withCompletion:];
+-[MobileInstallerProtocol removeDataSeparatedAppsWithBundleIDs:fromPersona:withCompletion:];
+-[MobileInstallerProtocol addPersona:toApp:inDomain:withCompletion:];
+-[MobileInstallerProtocol removePersona:fromApp:inDomain:withCompletion:];
+-[MobileInstallerProtocol enrollPersona:forApps:inDomain:withCompletion:];
+-[MobileInstallerProtocol setPersonas:forApp:inDomain:withCompletion:];
+-[MobileInstallerProtocol personasForBundleID:inDomain:withCompletion:];
+-[MobileInstallerProtocol personasForBuiltInBundleID:withCompletion:];
+-[MobileInstallerProtocol appBundleIDsWithPersona:inDomain:withCompletion:];
+-[MobileInstallerProtocol reportPersonaLifecycleEventForUniqueString:eventType:withCompletion:];
+-[MobileInstallerProtocol linkedBundleIDsForAppIdentity:withCompletion:];
+-[MobileInstallerProtocol getPidForTestingWithCompletion:];
+-[MobileInstallerProtocol dieForTesting];
+-[MobileInstallerProtocol raiseExceptionWithCompletion:];
+-[MobileInstallerProtocol setTestModeWithCompletion:];
+-[MobileInstallerProtocol endTestModeWithCompletion:];
+-[MobileInstallerProtocol getTestModeWithCompletion:];
+-[MobileInstallerProtocol setTestFlags:withCompletion:];
+-[MobileInstallerProtocol clearTestFlags:withCompletion:];
+-[MobileInstallerProtocol setEligibilityTestOverrides:withCompletion:];
+-[MobileInstallerProtocol removeAppReplacementStateForApp:completion:];
+
+@optional
+
+@end

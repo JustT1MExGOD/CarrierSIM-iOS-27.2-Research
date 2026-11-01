@@ -1,0 +1,18 @@
+# Fragment: hardlink_copy_hierarchy file-op import call sites
+# Source: installd_B3.bin (B3), sub_100002630
+
+848:0x1000026d8:  3a de 01 94   bl	j__fts_open_b
+855:0x1000026f4:  03 e0 01 94   bl	j__realpath$DARWIN_EXTSN
+865:0x10000271c:  99 df 01 94   bl	j__open
+869:0x10000272c:  1d de 01 94   bl	j__fstat
+1303:0x100002d7c:  e1 dc 01 94   bl	j__mkstemp
+1463:0x100002fcc:  19 dc 01 94   bl	j__link
+1494:0x100003040:  6c db 01 94   bl	j__copyfile
+1522:0x1000030a8:  3e db 01 94   bl	j__chmod
+1537:0x1000030d8:  86 dd 01 94   bl	j__readlink
+1545:0x1000030f8:  9a de 01 94   bl	j__symlink
+1579:0x100003170:  dc db 01 94   bl	j__mkdir
+1613:0x1000031f0:  4c db 01 94   bl	j__fchmod
+1620:0x10000320c:  49 dd 01 94   bl	j__rename
+1624:0x10000321c:  5d de 01 94   bl	j__unlink
+1687:0x1000032f8:  aa da 01 94   bl	j__chmod

@@ -1,0 +1,63 @@
+# Fragment: MIHelperServiceClient remote proxy -> stageItemAtURL
+# Source: installd_B3.bin (B3)
+
+0x10004b710:  e2 e3 00 91   add	x2, sp, #0x38
+0x10004b714:  e0 03 18 aa   mov	x0, x24
+0x10004b718:  0a c4 00 94   bl	j__objc_msgSend(x0, "_synchronousRemoteObjectProxyWithErrorHandler:")
+0x10004b71c:  a9 ba 00 94   bl	j__objc_claimAutoreleasedReturnValue
+0x10004b720:  f8 03 00 aa   mov	x24, x0
+0x10004b724:  e8 03 00 91   mov	x8, sp
+0x10004b728:  10 04 00 90   adrp	x16, 0x1000cb000
+0x10004b72c:  10 1e 41 f9   ldr	x16, [x16, #0x238] ; __got.__NSConcreteStackBlock
+0x10004b730:  f1 03 08 aa   mov	x17, x8
+0x10004b734:  31 5c ed f2   movk	x17, #0x6ae1, lsl #0x30
+0x10004b738:  30 0a c1 da   pacda	x16, x17
+0x10004b73c:  f0 03 00 f9   str	x16, [sp]
+0x10004b740:  e8 07 00 fd   str	d8, [sp, #0x8]
+0x10004b744:  08 41 00 91   add	x8, x8, #0x10
+0x10004b748:  10 00 00 90   adrp	x16, 0x10004b000
+0x10004b74c:  10 b2 23 91   add	x16, x16, #0x8ec
+0x10004b750:  10 01 c1 da   pacia	x16, x8
+0x10004b754:  88 03 00 d0   adrp	x8, 0x1000bd000
+0x10004b758:  08 c1 02 91   add	x8, x8, #0xb0 ; data_1000bd0b0 (__DATA_CONST.__const)
+0x10004b75c:  f0 23 01 a9   stp	x16, x8, [sp, #0x10]
+0x10004b760:  fa 67 02 a9   stp	x26, x25, [sp, #0x20]
+0x10004b764:  fb 1b 00 f9   str	x27, [sp, #0x30]
+0x10004b768:  e5 03 00 91   mov	x5, sp
+0x10004b76c:  e2 03 13 aa   mov	x2, x19
+0x10004b770:  e3 03 14 aa   mov	x3, x20
+0x10004b774:  e4 03 15 aa   mov	x4, x21
+0x10004b778:  2a de 00 94   bl	j__objc_msgSend(x0, "stageItemAtURL:toStagingLocation:options:completion:")
+0x10004b77c:  f1 ba 00 94   bl	j__objc_release_x24
+
+# moveItemInStagingLocation remote proxy call
+0x10004c4b8:  e2 63 01 91   add	x2, sp, #0x58
+0x10004c4bc:  e0 03 18 aa   mov	x0, x24
+0x10004c4c0:  a0 c0 00 94   bl	j__objc_msgSend(x0, "_synchronousRemoteObjectProxyWithErrorHandler:")
+0x10004c4c4:  3f b7 00 94   bl	j__objc_claimAutoreleasedReturnValue
+0x10004c4c8:  f8 03 00 aa   mov	x24, x0
+0x10004c4cc:  e8 a3 00 91   add	x8, sp, #0x28
+0x10004c4d0:  f0 03 00 f0   adrp	x16, 0x1000cb000
+0x10004c4d4:  10 1e 41 f9   ldr	x16, [x16, #0x238] ; __got.__NSConcreteStackBlock
+0x10004c4d8:  f1 03 08 aa   mov	x17, x8
+0x10004c4dc:  31 5c ed f2   movk	x17, #0x6ae1, lsl #0x30
+0x10004c4e0:  30 0a c1 da   pacda	x16, x17
+0x10004c4e4:  f0 17 00 f9   str	x16, [sp, #0x28]
+0x10004c4e8:  e8 1b 00 fd   str	d8, [sp, #0x30]
+0x10004c4ec:  08 41 00 91   add	x8, x8, #0x10
+0x10004c4f0:  10 00 00 90   adrp	x16, 0x10004c000
+0x10004c4f4:  10 32 19 91   add	x16, x16, #0x64c
+0x10004c4f8:  10 01 c1 da   pacia	x16, x8
+0x10004c4fc:  88 03 00 b0   adrp	x8, 0x1000bd000
+0x10004c500:  08 a1 04 91   add	x8, x8, #0x128 ; data_1000bd128 (__DATA_CONST.__const)
+0x10004c504:  f0 a3 03 a9   stp	x16, x8, [sp, #0x38]
+0x10004c508:  f9 eb 04 a9   stp	x25, x26, [sp, #0x48]
+0x10004c50c:  e0 06 40 ad   ldp	q0, q1, [x23]
+0x10004c510:  e0 07 00 ad   stp	q0, q1, [sp]
+0x10004c514:  e5 03 00 91   mov	x5, sp
+0x10004c518:  e6 a3 00 91   add	x6, sp, #0x28
+0x10004c51c:  e2 03 13 aa   mov	x2, x19
+0x10004c520:  e3 03 14 aa   mov	x3, x20
+0x10004c524:  e4 03 15 aa   mov	x4, x21
+0x10004c528:  0e d1 00 94   bl	j__objc_msgSend(x0, "moveItemInStagingLocation:atRelativePath:toDestinationURL:onBehalfOf:completion:")
+0x10004c52c:  85 b7 00 94   bl	j__objc_release_x24

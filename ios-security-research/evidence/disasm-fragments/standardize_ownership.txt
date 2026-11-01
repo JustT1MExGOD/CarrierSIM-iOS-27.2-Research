@@ -1,0 +1,24 @@
+# Fragment: standardizeOwnership call site
+# Source: installd_B3.bin (B3)
+
+0x100031e20:  a0 46 01 94   bl	j__objc_msgSend(x0, "uid")
+0x100031e24:  fb 03 00 aa   mov	x27, x0
+0x100031e28:  c0 be 47 f9   ldr	x0, [x22, #0xf78]
+0x100031e2c:  f5 43 01 94   bl	j__objc_msgSend(x0, "sharedInstance")
+0x100031e30:  e4 20 01 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100031e34:  fc 03 00 aa   mov	x28, x0
+0x100031e38:  ea 33 01 94   bl	j__objc_msgSend(x0, "gid")
+0x100031e3c:  e4 03 00 aa   mov	x4, x0
+0x100031e40:  f7 17 00 f9   str	x23, [sp, #0x28]
+0x100031e44:  e8 a3 00 91   add	x8, sp, #0x28
+0x100031e48:  e8 03 00 f9   str	x8, [sp]
+0x100031e4c:  36 00 80 52   mov	w22, #0x1
+0x100031e50:  e0 03 14 aa   mov	x0, x20
+0x100031e54:  e2 03 19 aa   mov	x2, x25
+0x100031e58:  e3 03 1b aa   mov	x3, x27
+0x100031e5c:  25 00 80 52   mov	w5, #0x1
+0x100031e60:  26 00 80 52   mov	w6, #0x1
+0x100031e64:  e7 03 18 aa   mov	x7, x24
+0x100031e68:  de 44 01 94   bl	j__objc_msgSend(x0, "standardizeOwnershipAtURL:toUID:GID:removeACLs:setProtectionClass:foundSymlink:error:")
+0x100031e6c:  fb 03 00 aa   mov	x27, x0
+0x100031e70:  e8 17 40 f9   ldr	x8, [sp, #0x28]
