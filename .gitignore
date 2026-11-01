@@ -1,0 +1,11 @@
+# Локальные файлы, не предназначенные для публикации
+*.ipsw
+*.bin
+*.dsc
+*.dylib
+*.log
+*.jsonl
+*.plist
+*.zip
+__pycache__/
+.DS_Store
