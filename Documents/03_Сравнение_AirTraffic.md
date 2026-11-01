@@ -1,4 +1,4 @@
-# Статическое сравнение AirTraffic
+﻿# Статическое сравнение AirTraffic
 
 В Beta 2 в исследованном участке встречается строка `Cannot move asset outside of AFC root`. В Beta 3 обнаружены сообщения `Could not open AFC root`, `Could not create directory ... beneath AFC root` и `Failed to move completed file ... beneath AFC root`.
 
