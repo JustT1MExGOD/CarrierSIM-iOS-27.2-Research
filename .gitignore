@@ -6,6 +6,7 @@
 *.log
 *.jsonl
 *.plist
+!ios-security-research/evidence/entitlements/*.entitlements.plist
 *.zip
 __pycache__/
 .DS_Store

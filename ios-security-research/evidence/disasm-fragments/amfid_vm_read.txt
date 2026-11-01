@@ -1,0 +1,70 @@
+# Fragment: amfid vm_read call sites — two DISTINCT sources (no double-fetch)
+# Source: amfid_B3.bin (B3, UUID CFB0C004-41E6-3E06-9D94-0F71E7B3DA2B)
+
+## vm_read #1: profileData body @0x100004260
+2689:0x100004260:  95 5a 00 94   bl	j__vm_read
+
+## vm_read #2: profileAuxSig @0x100004300
+2732:0x100004300:  6d 5a 00 94   bl	j__vm_read
+
+## context: profileData fetch (x22→bytes→length→vm_read)
+0x100004214:  c3 5c 00 94   bl	j__objc_msgSend(x0, "profileData")
+0x100004218:  fb 58 00 94   bl	j__objc_claimAutoreleasedReturnValue
+0x10000421c:  fa 03 00 aa   mov	x26, x0
+0x100004220:  15 01 00 d0   adrp	x21, 0x100026000
+0x100004224:  b5 5a 40 f9   ldr	x21, [x21, #0xb0] ; __got._mach_task_self_
+0x100004228:  f8 43 40 f9   ldr	x24, [sp, #0x80]
+0x10000422c:  60 04 00 b4   cbz	x0, loc_1000042b8 ; ⤵ 0x8c
+0x100004230:  b3 02 40 b9   ldr	w19, [x21]
+0x100004234:  e0 03 1a aa   mov	x0, x26
+0x100004238:  4f 59 00 94   bl	j__objc_retainAutorelease
+0x10000423c:  29 5b 00 94   bl	j__objc_msgSend(x0, "bytes")
+0x100004240:  f4 03 00 aa   mov	x20, x0
+0x100004244:  e0 03 1a aa   mov	x0, x26
+0x100004248:  4e 5c 00 94   bl	j__objc_msgSend(x0, "length")
+0x10000424c:  e2 03 00 2a   mov	w2, w0
+0x100004250:  e0 03 13 aa   mov	x0, x19
+0x100004254:  e1 03 14 aa   mov	x1, x20
+0x100004258:  e3 4f 45 a9   ldp	x3, x19, [sp, #0x50]
+0x10000425c:  e4 03 13 aa   mov	x4, x19
+0x100004260:  95 5a 00 94   bl	j__vm_read
+0x100004264:  40 02 00 34   cbz	w0, loc_1000042ac ; ⤵ 0x48
+0x100004268:  e8 33 40 f9   ldr	x8, [sp, #0x60]
+0x10000426c:  1f 01 00 b9   str	wzr, [x8]
+0x100004270:  7f 02 00 b9   str	wzr, [x19]
+0x100004274:  11 00 00 14   b	loc_1000042b8 ; ⤵ 0x44
+0x100004278:  ; loc_100004278
+0x100004278:  f3 03 00 aa   mov	x19, x0
+0x10000427c:  99 5b 00 94   bl	j__objc_msgSend(x0, "description")
+0x100004280:  e1 58 00 94   bl	j__objc_claimAutoreleasedReturnValue
+0x100004284:  fa 03 00 aa   mov	x26, x0
+0x100004288:  3b 59 00 94   bl	j__objc_retainAutorelease
+
+## context: profileAuxSig fetch
+0x1000042d0:  e0 03 13 aa   mov	x0, x19
+0x1000042d4:  28 59 00 94   bl	j__objc_retainAutorelease
+0x1000042d8:  02 5b 00 94   bl	j__objc_msgSend(x0, "bytes")
+0x1000042dc:  f5 03 00 aa   mov	x21, x0
+0x1000042e0:  e0 03 13 aa   mov	x0, x19
+0x1000042e4:  27 5c 00 94   bl	j__objc_msgSend(x0, "length")
+0x1000042e8:  e2 03 00 2a   mov	w2, w0
+0x1000042ec:  e0 03 14 aa   mov	x0, x20
+0x1000042f0:  e1 03 15 aa   mov	x1, x21
+0x1000042f4:  f4 37 40 f9   ldr	x20, [sp, #0x68]
+0x1000042f8:  e3 03 14 aa   mov	x3, x20
+0x1000042fc:  e4 03 1b aa   mov	x4, x27
+0x100004300:  6d 5a 00 94   bl	j__vm_read
+0x100004304:  20 01 00 34   cbz	w0, loc_100004328 ; ⤵ 0x24
+0x100004308:  f8 03 00 a9   stp	x24, x0, [sp]
+0x10000430c:  c1 00 00 b0   adrp	x1, 0x10001d000
+0x100004310:  21 d8 08 91   add	x1, x1, #0x236 ; "%s: unable to vm_read profileAuxSig: %d"
+0x100004314:  60 00 80 52   mov	w0, #0x3
+0x100004318:  5f 5a 00 94   bl	j__syslog
+0x10000431c:  9f 02 00 f9   str	xzr, [x20]
+0x100004320:  7f 03 00 b9   str	wzr, [x27]
+0x100004324:  03 00 00 14   b	loc_100004330 ; ⤵ 0xc
+0x100004328:  ; loc_100004328
+0x100004328:  28 00 80 52   mov	w8, #0x1
+0x10000432c:  88 03 00 b9   str	w8, [x28]
+0x100004330:  ; loc_100004330
+0x100004330:  28 01 00 90   adrp	x8, 0x100028000
