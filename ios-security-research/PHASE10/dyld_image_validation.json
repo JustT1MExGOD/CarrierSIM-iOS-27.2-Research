@@ -1,0 +1,996 @@
+{
+  "cache": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e",
+  "targets": [
+    {
+      "name": "Security",
+      "path": "/System/Library/Frameworks/Security.framework/Security",
+      "image_vmaddr": "0x189501000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.03",
+      "source_offset": "0x1101000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 41,
+      "sizeofcmds": 6528,
+      "flags": "0x82110085",
+      "uuid": "A413232A-E824-39DF-AAFA-2E7E6153AE24",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x189501000",
+          "vmsize": "0x1de930",
+          "fileoff": "0x1101000",
+          "filesize": "0x1de930"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x1e079f908",
+          "vmsize": "0x19898",
+          "fileoff": "0x6cb908",
+          "filesize": "0x19898"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x1e28ae4d0",
+          "vmsize": "0x28178",
+          "fileoff": "0x27da4d0",
+          "filesize": "0x28178"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x1ef0bceb8",
+          "vmsize": "0x3418",
+          "fileoff": "0xcfe8eb8",
+          "filesize": "0x3418"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x1eb1572c8",
+          "vmsize": "0x3260",
+          "fileoff": "0x90832c8",
+          "filesize": "0x3260"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x1edd50160",
+          "vmsize": "0x458",
+          "fileoff": "0xbc7c160",
+          "filesize": "0x458"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/PrivateFrameworks/AppleKeyStore.framework/AppleKeyStore",
+        "/System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter",
+        "/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime",
+        "/usr/lib/libsqlite3.dylib",
+        "/usr/lib/libcoretls.dylib",
+        "/usr/lib/libcoretls_cfhelpers.dylib",
+        "/usr/lib/libMobileGestalt.dylib",
+        "/usr/lib/libbsm.0.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+        "/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libc++.1.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x17894600",
+        "nsyms": 9996,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "MobileInstallation",
+      "path": "/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation",
+      "image_vmaddr": "0x1d2ccc000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.21",
+      "source_offset": "0x28cc000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 25,
+      "sizeofcmds": 4592,
+      "flags": "0x82000085",
+      "uuid": "60B509C3-9DED-3504-8840-9874714C0109",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x1d2ccc000",
+          "vmsize": "0x31fac",
+          "fileoff": "0x28cc000",
+          "filesize": "0x31fac"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x1e1cec4a0",
+          "vmsize": "0x1a70",
+          "fileoff": "0x1c184a0",
+          "filesize": "0x1a70"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x1e8301e80",
+          "vmsize": "0x4c10",
+          "fileoff": "0x822de80",
+          "filesize": "0x4c10"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x1ef7f9fc8",
+          "vmsize": "0x50",
+          "fileoff": "0xd725fc8",
+          "filesize": "0x50"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x1ed477ff8",
+          "vmsize": "0x3c0",
+          "fileoff": "0xb3a3ff8",
+          "filesize": "0x3c0"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x1eee0df40",
+          "vmsize": "0x2f0",
+          "fileoff": "0xcd39f40",
+          "filesize": "0x2f0"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/PrivateFrameworks/Bom.framework/Bom",
+        "/System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1aeb2e20",
+        "nsyms": 1104,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "libmis",
+      "path": "/usr/lib/libmis.dylib",
+      "image_vmaddr": "0x226410000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.36",
+      "source_offset": "0x6010000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 35,
+      "sizeofcmds": 5792,
+      "flags": "0x86100085",
+      "uuid": "CE1D3D2A-3EC2-3A6D-AFA8-2FEDA08BCB68",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x226410000",
+          "vmsize": "0x5fa34",
+          "fileoff": "0x6010000",
+          "filesize": "0x5fa34"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x2689e46b0",
+          "vmsize": "0x58c8",
+          "fileoff": "0x8c46b0",
+          "filesize": "0x58c8"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x26b792c40",
+          "vmsize": "0x5c48",
+          "fileoff": "0x3672c40",
+          "filesize": "0x5c48"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x272849710",
+          "vmsize": "0xf20",
+          "fileoff": "0x8729710",
+          "filesize": "0xf20"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x276251210",
+          "vmsize": "0x12c0",
+          "fileoff": "0xc131210",
+          "filesize": "0x12c0"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime",
+        "/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics",
+        "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+        "/usr/lib/libCoreEntitlements.dylib",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libc++.1.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/usr/lib/libMobileGestalt.dylib",
+        "/usr/lib/libsqlite3.dylib",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswift_Builtin_float.dylib",
+        "/usr/lib/swift/libswift_DarwinFoundation1.dylib",
+        "/usr/lib/swift/libswiftos.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1c7d37d0",
+        "nsyms": 1028,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "AppleMobileFileIntegrity",
+      "path": "/System/Library/PrivateFrameworks/AppleMobileFileIntegrity.framework/AppleMobileFileIntegrity",
+      "image_vmaddr": "0x259011000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.50",
+      "source_offset": "0xc11000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 25,
+      "sizeofcmds": 3928,
+      "flags": "0x82100085",
+      "uuid": "A235E3C2-68CE-338A-8ED8-FFE4462860C5",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x259011000",
+          "vmsize": "0xfb34",
+          "fileoff": "0xc11000",
+          "filesize": "0xfb34"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x2694fb918",
+          "vmsize": "0xf28",
+          "fileoff": "0x13db918",
+          "filesize": "0xf28"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x26e4ee558",
+          "vmsize": "0x12f0",
+          "fileoff": "0x63ce558",
+          "filesize": "0x12f0"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x274517cd0",
+          "vmsize": "0x150",
+          "fileoff": "0xa3f7cd0",
+          "filesize": "0x150"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x2767ee018",
+          "vmsize": "0x240",
+          "fileoff": "0xc6ce018",
+          "filesize": "0x240"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/usr/lib/libmis.dylib",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libc++.1.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+        "/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics"
+      ],
+      "symtab": {
+        "symoff": "0x1e37bd00",
+        "nsyms": 560,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "CodesignKit",
+      "path": "/System/Library/PrivateFrameworks/CodesignKit.framework/CodesignKit",
+      "image_vmaddr": "0x25c934000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.50",
+      "source_offset": "0x4534000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 33,
+      "sizeofcmds": 5048,
+      "flags": "0x86100085",
+      "uuid": "0EC827C0-6BFE-392A-871F-CCAAE3917D0A",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x25c934000",
+          "vmsize": "0xab60",
+          "fileoff": "0x4534000",
+          "filesize": "0xab60"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x26966bc00",
+          "vmsize": "0x220",
+          "fileoff": "0x154bc00",
+          "filesize": "0x220"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x26ea45bf0",
+          "vmsize": "0x10f8",
+          "fileoff": "0x6925bf0",
+          "filesize": "0x10f8"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x277499020",
+          "vmsize": "0x600",
+          "fileoff": "0xd379020",
+          "filesize": "0x600"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x2753586b0",
+          "vmsize": "0xc30",
+          "fileoff": "0xb2386b0",
+          "filesize": "0xc30"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation",
+        "/usr/lib/swift/libswiftAccelerate.dylib",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftMetal.dylib",
+        "/usr/lib/swift/libswiftOSLog.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftQuartzCore.dylib",
+        "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswift_Builtin_float.dylib",
+        "/usr/lib/swift/libswiftos.dylib",
+        "/usr/lib/swift/libswiftsimd.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1e79d0e0",
+        "nsyms": 146,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "libDetachedCertificates",
+      "path": "/usr/lib/libDetachedCertificates.dylib",
+      "image_vmaddr": "0x2c677c000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.73",
+      "source_offset": "0x637c000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 19,
+      "sizeofcmds": 2776,
+      "flags": "0x82100085",
+      "uuid": "D0B631B9-359C-360F-8359-880558F926C1",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x2c677c000",
+          "vmsize": "0x8a34",
+          "fileoff": "0x637c000",
+          "filesize": "0x8a34"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x2d1e8b618",
+          "vmsize": "0x2f0",
+          "fileoff": "0x1e27618",
+          "filesize": "0x2f0"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x2d5e07668",
+          "vmsize": "0xa90",
+          "fileoff": "0x5da3668",
+          "filesize": "0xa90"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x2dc30e550",
+          "vmsize": "0xa0",
+          "fileoff": "0xa2aa550",
+          "filesize": "0xa0"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x2daae6758",
+          "vmsize": "0x2c",
+          "fileoff": "0x8a82758",
+          "filesize": "0x2c"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      ],
+      "symtab": {
+        "symoff": "0x219db130",
+        "nsyms": 141,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "TrustKit",
+      "path": "/System/Library/PrivateFrameworks/TrustKit.framework/TrustKit",
+      "image_vmaddr": "0x237e43000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.40",
+      "source_offset": "0x7a43000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 51,
+      "sizeofcmds": 7072,
+      "flags": "0x86100085",
+      "uuid": "0791DC22-F4E8-3F90-8680-A7870D03EB67",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x237e43000",
+          "vmsize": "0x7dd20",
+          "fileoff": "0x7a43000",
+          "filesize": "0x7dd20"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x268dfe210",
+          "vmsize": "0x400",
+          "fileoff": "0xcde210",
+          "filesize": "0x400"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x26ca45918",
+          "vmsize": "0x8de8",
+          "fileoff": "0x4925918",
+          "filesize": "0x8de8"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x2771d6130",
+          "vmsize": "0x970",
+          "fileoff": "0xd0b6130",
+          "filesize": "0x970"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x272f187d0",
+          "vmsize": "0xc949",
+          "fileoff": "0x8df87d0",
+          "filesize": "0xc949"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x27699d3e0",
+          "vmsize": "0x31f8",
+          "fileoff": "0xc87d3e0",
+          "filesize": "0x31f8"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/Frameworks/CoreML.framework/CoreML",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/System/Library/Frameworks/CryptoKit.framework/CryptoKit",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics",
+        "/System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity",
+        "/System/Library/PrivateFrameworks/Rules.framework/Rules",
+        "/System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices",
+        "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+        "/usr/lib/libMobileGestalt.dylib",
+        "/usr/lib/swift/libswiftAVFoundation.dylib",
+        "/usr/lib/swift/libswiftAccelerate.dylib",
+        "/usr/lib/swift/libswiftCompression.dylib",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreAudio.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftCoreImage.dylib",
+        "/usr/lib/swift/libswiftCoreLocation.dylib",
+        "/usr/lib/swift/libswiftCoreMIDI.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftMLCompute.dylib",
+        "/usr/lib/swift/libswiftMetal.dylib",
+        "/usr/lib/swift/libswiftNaturalLanguage.dylib",
+        "/usr/lib/swift/libswiftOSLog.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftQuartzCore.dylib",
+        "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswift_Builtin_float.dylib",
+        "/usr/lib/swift/libswift_Concurrency.dylib",
+        "/usr/lib/swift/libswiftos.dylib",
+        "/usr/lib/swift/libswiftsimd.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1d2170b0",
+        "nsyms": 350,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "ProfileValidatedAppIdentity",
+      "path": "/System/Library/PrivateFrameworks/ProfileValidatedAppIdentity.framework/ProfileValidatedAppIdentity",
+      "image_vmaddr": "0x29ff73000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.63",
+      "source_offset": "0x7b73000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 19,
+      "sizeofcmds": 3320,
+      "flags": "0x82100085",
+      "uuid": "8631DD74-4F53-3328-BBE6-4AD26083027C",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x29ff73000",
+          "vmsize": "0x1e8c",
+          "fileoff": "0x7b73000",
+          "filesize": "0x1e8c"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x2d0bed850",
+          "vmsize": "0x230",
+          "fileoff": "0xb89850",
+          "filesize": "0x230"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x2d3e3de68",
+          "vmsize": "0x3e8",
+          "fileoff": "0x3dd9e68",
+          "filesize": "0x3e8"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x2dbfebd70",
+          "vmsize": "0x50",
+          "fileoff": "0x9f87d70",
+          "filesize": "0x50"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x2d962bf50",
+          "vmsize": "0x150",
+          "fileoff": "0x75c7f50",
+          "filesize": "0x150"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      ],
+      "symtab": {
+        "symoff": "0x20233c70",
+        "nsyms": 77,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "LocalAuthentication",
+      "path": "/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication",
+      "image_vmaddr": "0x1cc3de000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.19",
+      "source_offset": "0x3fde000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 34,
+      "sizeofcmds": 5664,
+      "flags": "0x86100085",
+      "uuid": "2EB95A78-2506-3B6F-858B-DA37CD913010",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x1cc3de000",
+          "vmsize": "0x3f6f0",
+          "fileoff": "0x3fde000",
+          "filesize": "0x3f6f0"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x1e191ac10",
+          "vmsize": "0x42a8",
+          "fileoff": "0x1846c10",
+          "filesize": "0x42a8"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x1e74f10c8",
+          "vmsize": "0xa468",
+          "fileoff": "0x741d0c8",
+          "filesize": "0xa468"
+        },
+        {
+          "name": "__AUTH",
+          "vmaddr": "0x1ef781970",
+          "vmsize": "0x598",
+          "fileoff": "0xd6ad970",
+          "filesize": "0x598"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x1ed0bdc10",
+          "vmsize": "0x12c0",
+          "fileoff": "0xafe9c10",
+          "filesize": "0x12c0"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x1ee0f3748",
+          "vmsize": "0x14f0",
+          "fileoff": "0xc01f748",
+          "filesize": "0x14f0"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/System/Library/PrivateFrameworks/LocalAuthenticationCore.framework/LocalAuthenticationCore",
+        "/System/Library/PrivateFrameworks/LocalAuthenticationCredentialServices.framework/LocalAuthenticationCredentialServices",
+        "/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/Frameworks/LocalAuthentication.framework/Support/SharedUtils.framework/SharedUtils",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/Combine.framework/Combine",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftObservation.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswift_Builtin_float.dylib",
+        "/usr/lib/swift/libswiftos.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1aab8590",
+        "nsyms": 1874,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "SecurityFoundation",
+      "path": "/System/Library/PrivateFrameworks/SecurityFoundation.framework/SecurityFoundation",
+      "image_vmaddr": "0x2a9774000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.67",
+      "source_offset": "0x1374000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 20,
+      "sizeofcmds": 3304,
+      "flags": "0x82100085",
+      "uuid": "3245DBC2-ECE6-3BEA-B885-21917B0179DF",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x2a9774000",
+          "vmsize": "0x186dc",
+          "fileoff": "0x1374000",
+          "filesize": "0x186dc"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x2d0d579b8",
+          "vmsize": "0x1960",
+          "fileoff": "0xcf39b8",
+          "filesize": "0x1960"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x2d44d4538",
+          "vmsize": "0x92c8",
+          "fileoff": "0x4470538",
+          "filesize": "0x92c8"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x2d9987630",
+          "vmsize": "0x9c8",
+          "fileoff": "0x7923630",
+          "filesize": "0x9c8"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x2db3e7d30",
+          "vmsize": "0x2830",
+          "fileoff": "0x9383d30",
+          "filesize": "0x2830"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+      ],
+      "symtab": {
+        "symoff": "0x205d4150",
+        "nsyms": 1457,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    },
+    {
+      "name": "MessageSecurity",
+      "path": "/System/Library/PrivateFrameworks/MessageSecurity.framework/MessageSecurity",
+      "image_vmaddr": "0x22a21f000",
+      "source_file": "C:/ipsw-tools/beta2-dyld/System/Library/Caches/com.apple.dyld\\dyld_shared_cache_arm64e.38",
+      "source_offset": "0x1e1f000",
+      "magic": "0xfeedfacf",
+      "cpu_type": "0x100000c",
+      "cpu_subtype": "0x80000002",
+      "filetype": 6,
+      "ncmds": 29,
+      "sizeofcmds": 5264,
+      "flags": "0x86100085",
+      "uuid": "67504E44-A574-3334-BC94-8421CC1AB505",
+      "segments": [
+        {
+          "name": "__TEXT",
+          "vmaddr": "0x22a21f000",
+          "vmsize": "0x59958",
+          "fileoff": "0x1e1f000",
+          "filesize": "0x59958"
+        },
+        {
+          "name": "__DATA_CONST",
+          "vmaddr": "0x268b2ba60",
+          "vmsize": "0x5e48",
+          "fileoff": "0xa0ba60",
+          "filesize": "0x5e48"
+        },
+        {
+          "name": "__AUTH_CONST",
+          "vmaddr": "0x26be0b978",
+          "vmsize": "0xa780",
+          "fileoff": "0x3ceb978",
+          "filesize": "0xa780"
+        },
+        {
+          "name": "__DATA",
+          "vmaddr": "0x2729d9930",
+          "vmsize": "0x41f1",
+          "fileoff": "0x88b9930",
+          "filesize": "0x41f1"
+        },
+        {
+          "name": "__DATA_DIRTY",
+          "vmaddr": "0x275a60ca0",
+          "vmsize": "0x1010",
+          "fileoff": "0xb940ca0",
+          "filesize": "0x1010"
+        },
+        {
+          "name": "__LINKEDIT",
+          "vmaddr": "0x2de48c000",
+          "vmsize": "0x294d8000",
+          "fileoff": "0x4000",
+          "filesize": "0x294d8000"
+        }
+      ],
+      "load_dylibs": [
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/Security.framework/Security",
+        "/usr/lib/libheimdal-asn1.dylib",
+        "/System/Library/Frameworks/Foundation.framework/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+        "/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswift_Builtin_float.dylib",
+        "/usr/lib/swift/libswiftos.dylib"
+      ],
+      "symtab": {
+        "symoff": "0x1cae8370",
+        "nsyms": 2828,
+        "stroff": "0x2214b6b0",
+        "strsize": 121162166
+      },
+      "dyld_info": null,
+      "code_signature": null,
+      "has_text": true,
+      "has_data": true,
+      "has_linkedit": true,
+      "status": "VERIFIED",
+      "reason": "header and load commands recovered"
+    }
+  ]
+}
